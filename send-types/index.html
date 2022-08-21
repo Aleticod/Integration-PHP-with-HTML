@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de input</title>
+</head>
+<body>
+    
+    <form action="./server.php" method="post" enctype="multipart/from-data">
+        <!-- iput simple -->
+        <!-- <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name"> -->
+        
+        <!-- arreglos -->
+         <!-- <label>People:</label>
+         <input type="text" name="people[]" >
+         <input type="text" name="people[]" >
+         <input type="text" name="people[]" > -->
+
+        <!-- arreglos asociativos -->
+        <!-- <label for="">people:</label>
+        <input type="text" name="people[nombre]" >
+        <input type= "email" name="people[email]" >
+        <input type="number" name="people[edad]" > -->
+
+        <!-- checkbox -->
+        <!-- <label for="">primer check</label>
+        <input type="checkbox" name = "list1" value="valor elegido">
+        <label for="">segundo check</label>
+        <input type="checkbox" name = "list2">
+        <label for="">tercer check</label>
+        <input type="checkbox" name = "list3"> -->
+
+        <!-- radio -->
+        <!-- <label for="">radio 1</label>
+        <input type="radio" name="pais" value="prende">
+        <label for="">radio 2</label>
+        <input type="radio" name="pais">
+        <label for="">radio 3</label>
+        <input type="radio" name="pais" > -->
+
+        <!-- multible archivos -->
+        <label for="">imagenes</label>
+        <input type="file" multiple name="galeria[]" id="">
+        <label for="">archivos</label>
+        <input type="file" multiple name="galeria[]" id="">
+        <label for="">musica</label>
+        <input type="file" multiple name="galeria[]" id="">
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>
