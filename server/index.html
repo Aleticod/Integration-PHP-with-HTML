@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Esto es una solicitud al servidor</h1>
+    
+    <script>
+        // form data es similar a un formulario html
+        const formData = new FormData();
+        formData.append('nombre', 'Mr. michi');
+        formData.append('edad', '14');
+
+        // Solicitud asincrona
+        fetch("server.php?color=naranja", { // envio por metodo GET
+            body: formData,
+            method: "POST" // envio por metodo POST
+        })
+        .then(res => res.text())
+        .then(data => {
+            console.log(data);
+        });
+    </script>
+</body>
+</html>
